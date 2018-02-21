@@ -18,7 +18,7 @@ docker run --name=derby \
       --env dbuser=<dbuser> \
       --env dbpass=<dbpass> \
       --env dbport=<dbport> \
-      --expose=<dbport> -P derby
+      --expose=<dbport> -d -P derby
 ```
 
 Example:
@@ -29,10 +29,10 @@ docker run --name=derby \
       --env dbuser=axibase \
       --env dbpass=axibase \
       --env dbport=8443 \
-      --expose=8443 -P derby
+      --expose=8443 -d -P derby
 ```
 
-Connect to `<dbname>` from client:
+Connect to `<dbname>` from client
 
 * using `ij`:
 
